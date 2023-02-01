@@ -2,10 +2,7 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <title>IMC</title>
 </head>
 <body>
 
@@ -22,7 +19,7 @@
                 var peso = parseFloat($("#inp_peso").val())
                 var peso = parseFloat($("#inp_altura").val())
                 $.ajax({
-                    url: "Gabriel1997.pythonanywhere.com/api",
+                    url: "https://Gabriel1997.pythonanywhere.com/api",
                     type: "POST",
                     contentType: "application/json",
                     data: JSON.stringify({"peso": peso, "altura": altura})
