@@ -21,7 +21,7 @@
                 $.ajax({
                     url: "https://Gabriel1997.pythonanywhere.com/api",
                     type: "POST",
-                    contentType: "application/json",
+                    dataType: "jsonp",
                     data: JSON.stringify({"peso": peso, "altura": altura})
                 }).done(function(data) { $("h1").html("IMC: " + data["resultado"]) })
             })
